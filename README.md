@@ -11,6 +11,7 @@ Output in the dist should be:
 
 Publish the library using verdaccio (publishconfig is already set in package.json in projects/my-lib)
 
+## ng add
 Afterwards you can install the lib on a new project and run the schematics: ng add @my-org/my-lib 
 this will execute the ng-add schematic and give following output
 ```
@@ -26,3 +27,6 @@ Would you like to proceed? Yes
 Nothing to be done.
 
 ```
+## ng update
+execute ng update @my-org/my-lib@0.0.6 to update the package to version 0.0.6
+it will check the package.json and remove ngrx-store-freeze dependency if found

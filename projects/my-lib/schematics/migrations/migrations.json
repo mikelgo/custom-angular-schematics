@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "migration-v0-0-6": {
+      "description": "Update to version 0.0.6",
+      "version": "0.0.6",
+      "factory": "./0_0_6/index"
+    }
+  }
+}

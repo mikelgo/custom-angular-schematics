@@ -1,6 +1,6 @@
 {
   "name": "@my-org/my-lib",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0"
@@ -13,9 +13,12 @@
   "ng-add": {
     "save": "dependencies"
   },
+  "ng-update": {
+    "migrations": "./schematics/migrations/migrations.json"
+  },
   "scripts": {
     "build:schematics": "tsc -p tsconfig.schematics.json",
-    "postbuild:schematics": "copyfiles schematics/migrations.json schematics/collection.json ../../dist/my-org/my-lib/"
+    "postbuild:schematics": "copyfiles schematics/migrations/migrations.json schematics/collection.json ../../dist/my-org/my-lib/"
   },
   "devDependencies": {
     "copyfiles": "file:../../node_modules/copyfiles",
