@@ -40,7 +40,7 @@ export function myService(options: MyServiceSchema): Rule {
       throw new SchematicsException(`Invalid project name: ${options.project}`);
     }
 
-    const projectType = project.extensions.projectType === 'application' ? 'app' : 'lib';
+    const projectType = project.extensions['projectType'] === 'application' ? 'app' : 'lib';
 
     if (options.path === undefined) {
       options.path = `${project.sourceRoot}/${projectType}`;

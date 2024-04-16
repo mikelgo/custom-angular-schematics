@@ -5,6 +5,11 @@
       "description": "Update to version 0.0.6",
       "version": "0.0.6",
       "factory": "./0_0_6/index"
+    },
+    "migration-v0-0-9": {
+      "description": "Update to version 0.0.9",
+      "version": "0.0.9",
+      "factory": "./0_0_9/index"
     }
   }
 }
