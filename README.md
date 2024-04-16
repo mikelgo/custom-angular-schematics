@@ -1,27 +1,28 @@
-# MyLib
+# Ship Angular Schematics with library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+A test for shipping angular schematics with a library
 
-## Development server
+clone project
+npm i
+build the library and schematics: ng build my-lib && cd my-lib and npm run build:schematics
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Output in the dist should be:
+![dist](./docs/dist-structure.png)
 
-## Code scaffolding
+Publish the library using verdaccio (publishconfig is already set in package.json in projects/my-lib)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Afterwards you can install the lib on a new project and run the schematics: ng add @my-org/my-lib 
+this will execute the ng-add schematic and give following output
+```
+ℹ Using package manager: npm
+✔ Found compatible package version: @my-org/my-lib@0.0.3.
+✔ Package information loaded.
 
-## Build
+The package @my-org/my-lib@0.0.3 will be installed and executed.
+Would you like to proceed? Yes
+✔ Packages successfully installed.
+    ✅️ Running ng-add for my-lib
+✔ Packages installed successfully.
+Nothing to be done.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
