@@ -19,10 +19,6 @@
   "scripts": {
     "build:schematics": "tsc -p tsconfig.schematics.json"
   },
-  "devDependencies": {
-    "copyfiles": "file:../../node_modules/copyfiles",
-    "typescript": "file:../../node_modules/typescript"
-  },
   "publishConfig": {
     "registry": "http://localhost:4873"
   }

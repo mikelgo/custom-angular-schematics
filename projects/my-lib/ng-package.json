@@ -3,5 +3,6 @@
   "dest": "../../dist/my-org/my-lib",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["schematics/**/*.json"]
 }
