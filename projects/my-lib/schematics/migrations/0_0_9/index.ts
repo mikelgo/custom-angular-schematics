@@ -1,7 +1,4 @@
-import { renamingRule } from '../../utils/renaming-rule';
+import {migrateToSecondary} from "../../src/migrate-to-secondary";
 
-const renames: Record<string, string | [string, string]> = {
-  MyLibComponent: '@my-org/my-lib/my-component',
-};
 
-export default renamingRule('@my-org/my-lib', renames);
+export default migrateToSecondary();

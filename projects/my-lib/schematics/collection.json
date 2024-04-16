@@ -14,6 +14,10 @@
       "description": "Hello world",
       "factory": "./hello-world/index",
       "schema": "./hello-world/schema.json"
+    },
+    "migrate-to-secondary": {
+      "description": "Manual migrate",
+      "factory": "./migrate-to-secondary/index"
     }
   }
 }
