@@ -17,8 +17,7 @@
     "migrations": "./schematics/migrations/migrations.json"
   },
   "scripts": {
-    "build:schematics": "tsc -p tsconfig.schematics.json",
-    "postbuild:schematics": "copyfiles schematics/migrations/migrations.json schematics/collection.json ../../dist/my-org/my-lib/"
+    "build:schematics": "tsc -p tsconfig.schematics.json"
   },
   "devDependencies": {
     "copyfiles": "file:../../node_modules/copyfiles",
