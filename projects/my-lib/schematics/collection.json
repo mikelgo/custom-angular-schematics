@@ -9,6 +9,11 @@
       "description": "Generate a service in the project.",
       "factory": "./my-service/index#myService",
       "schema": "./my-service/schema.json"
+    },
+    "hello-world": {
+      "description": "Hello world",
+      "factory": "./hello-world/index",
+      "schema": "./hello-world/schema.json"
     }
   }
 }
