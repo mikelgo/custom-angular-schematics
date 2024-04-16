@@ -7,7 +7,8 @@
     "build": "ng build my-lib",
     "build:schematics": "cd ./projects && npm run build:schematics",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "publish": "cd dist/my-org/my-lib && npm publish"
   },
   "private": true,
   "dependencies": {
