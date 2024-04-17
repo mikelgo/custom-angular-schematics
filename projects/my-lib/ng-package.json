@@ -4,6 +4,6 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
-  "assets": ["schematics/**/*.json"],
+  "assets": ["schematics/**/*.json", "schematics/**/files/**"],
   "allowedNonPeerDependencies": ["ng-morph"]
 }

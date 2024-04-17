@@ -30,7 +30,6 @@
     "schematics/**/*"
   ],
   "exclude": [
-    "schematics/*/files/**/*",
     "**/*.spec.ts"
   ]
 }
